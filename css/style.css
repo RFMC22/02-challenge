@@ -1,0 +1,117 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --brightyellow: hsl(71, 73%, 54%);
+  --lightgray: hsl(204, 43%, 93%);
+  --grayishblue: hsl(218, 22%, 67%);
+  --fontfamily: 'Karla', sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontfamily);
+}
+body{
+  background-color: var(--lightgray);
+}
+#container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content{
+  width: 635px;
+  height: 475px;
+  background-color: white;
+  border-radius: 5px;
+}
+#content-header{
+  width: 90%;
+  height: 215px;
+  margin: auto;
+}
+#content-header h1{
+  padding-top: 35px;
+  font-size: 20px;
+  color: var(--cyan);
+}
+#header-info{
+  width: 100%;
+  height: 150px;
+}
+#header-info h2{
+  color: var(--brightyellow);
+  padding-top: 25px;
+  font-size: 16px;
+}
+#header-info p{
+  padding-top: 10px;
+  color: var(--grayishblue);
+  font-size: 14px;
+  width: 85%;
+}
+#container-footer{
+  width: 100%;
+  height: 260px;
+  display: flex;
+}
+.content-footer{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.content-footer:nth-child(1){
+  background-color: #2bb3b1;
+  border-bottom-left-radius: 5px;
+}
+.content-footer:nth-child(2){
+  background-color: #4abebd;
+  border-bottom-right-radius: 5px;
+}
+.content{
+  width: 80%;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content h3{
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+#price{
+  padding-top: 10px;
+  color: white;
+  font-weight: 400;
+}
+#price span{
+  font-weight: 700;
+  font-size: 40px;
+}
+#footer-info{
+  padding-top: 10px;
+  color: white;
+}
+button{
+  display: block;
+  width: 235px;
+  margin: 20px auto;
+  padding: 15px;
+  color: white;
+  background-color: var(--brightyellow);
+  border: 1px solid var(--brightyellow);
+  border-radius: 5px;
+}
+#footer-info2{
+  margin-top: 20px;
+  width: 208px;
+  list-style: none;
+  color: var(--lightgray);
+  font-size: 16px;
+}
